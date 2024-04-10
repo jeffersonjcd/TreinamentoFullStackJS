@@ -1,0 +1,14 @@
+/*Compinação de seletores, tem uma especifidade maior
+por isso o texto fica verde e não vermelho */
+
+#azul {
+    color: #00f;
+}
+
+body > h1 {
+    color: #0f0;
+}
+
+h1 {
+    color: #f00 !important;
+}
