@@ -1,0 +1,50 @@
+/* Seletor :nth-child() Esse seletor permite
+que o CSS encontre um filho específico */
+
+li:nth-child(2) {
+    color: #f00;
+}
+
+li:nth-child(odd) {
+    color: #00f;
+}
+
+/* Seletor de comportamento: Quando passa o mouse em cima de um elemento */
+li:hover {
+    background-color: #232323;
+    color: #fff;
+}
+
+/* Seletor de comportamentomuda o foco do objeto */
+
+input:focus {
+    background-color: #f00;
+}
+
+/* Pseudo-elementos -> ::bedore e :: after */
+
+li::before {
+    content: "(antes) ";
+}
+
+li::after {
+    content: " (depois)";
+}
+
+/* */
+
+li:first-child {
+    color: rgb(255, 174, 0);
+}
+
+li:last-child {
+    color: rgb(255, 0, 179);
+}
+
+li:not(:first-child){
+    color: #f00;
+}
+
+body:{
+    color: #00f;
+}
