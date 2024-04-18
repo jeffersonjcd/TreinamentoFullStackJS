@@ -11,4 +11,4 @@ console.warn(nome)
 //confirmacao = window.confirm("Confirma essa ação?")
 //console.log(confirmacao)
 
-alert("Olá mundo!")
+//alert("Olá mundo!")
