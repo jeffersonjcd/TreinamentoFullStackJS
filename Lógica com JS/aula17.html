@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação com Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+
+        <button onclick="mostraAreaOutput()">Mostrar Area no output</button>
+
+        <div id="output"></div>
+
+        <script>
+            mostraAreaOutput();
+
+            function mostraAreaOutput(){
+
+                var largura = prompt('Digite a largura');
+                largura = parseFloat(largura);
+                
+                var altura = prompt('Digite a altura');
+                altura = parseFloat(altura);
+
+                try{
+                    var area = calcularArea(largura, altura);
+                    var output = document.querySelector('#output');
+                    output.innerHTML = area;
+                }catch(e){
+                    alert(e);
+                    return;
+                }
+
+            }
+
+            function calcularArea(largura, altura){
+
+                if(isNaN(largura) || isNaN(altura)){
+                    throw new Error("Somente números é aceito")
+                }
+
+                area = largura * altura;
+                return(area);
+
+            }
+
+        </script>
+
+    </body>
+</html>
